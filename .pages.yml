@@ -1,0 +1,322 @@
+# Pages CMS — Web-Spec-Teoretyczna: Specjalność: Matematyka teoretyczna.
+# Wygenerowane przy migracji z Avean/IM-Website-test; pola „Opublikowany” usunięte (bez wersji roboczych).
+media:
+  input: public/pliki
+  output: /pliki
+  rename: safe
+settings:
+  commit:
+    identity: user
+content:
+- name: specjalnosc
+  label: 'Specjalność: Matematyka teoretyczna'
+  type: file
+  path: src/content/specjalnosci/matematyka-teoretyczna.md
+  format: yaml-frontmatter
+  fields:
+  - name: nazwa
+    label: Nazwa specjalności
+    type: string
+    required: true
+  - name: kierunek
+    label: Kierunek
+    type: select
+    options:
+      values:
+      - name: isim
+        label: Indywidualne Studia Informatyczno-Matematyczne
+      - name: matematyka
+        label: Matematyka
+      - name: siad
+        label: Sztuczna inteligencja w analizie danych
+      - name: szkola-doktorska
+        label: Szkoła doktorska
+    description: (lista z innego repozytorium — nowa pozycja wymaga dopisania w konfiguracji)
+  - name: kolejnosc
+    label: Kolejność kafelka na stronie kierunku (1 = pierwszy)
+    type: number
+  - name: na_stronie_kierunku
+    label: Pokaż kafelek na stronie kierunku
+    type: boolean
+    default: true
+  - name: bez_podstrony
+    label: Bez własnej podstrony (tylko kafelek, np. specjalność wygaszana)
+    type: boolean
+    default: false
+  - name: kafelek_dla_kogo
+    label: 'Kafelek: „Dla kogo” — jedno zdanie'
+    type: text
+  - name: kafelek_kariera
+    label: 'Kafelek: „Po studiach” — jedno zdanie'
+    type: text
+  - name: skrot
+    label: Skrót (np. AD)
+    type: string
+  - name: poziom
+    label: Poziom (np. studia I i II stopnia)
+    type: string
+  - name: opis
+    label: Jedno zdanie pod nazwą
+    type: text
+  - name: zaklad
+    label: Zakład
+    type: select
+    options:
+      values:
+      - name: algebra-i-teoria-modeli
+        label: Zakład Algebry i Teorii Modeli
+      - name: analiza-funkcjonalna
+        label: Zakład Analizy Funkcjonalnej
+      - name: analiza-matematyczna
+        label: Zakład Analizy Matematycznej
+      - name: dydaktyka
+        label: Pracownia Dydaktyki i Popularyzacji Matematyki
+      - name: geometria
+        label: Zakład Geometrii
+      - name: rownania-rozniczkowe
+        label: Zakład Równań Różniczkowych
+      - name: statystyka
+        label: Zakład Statystyki
+      - name: teoria-mnogosci-i-topologia
+        label: Zakład Teorii Mnogości i Topologii
+      - name: teoria-prawdopodobienstwa
+        label: Zakład Teorii Prawdopodobieństwa
+    description: (lista z innego repozytorium — nowa pozycja wymaga dopisania w konfiguracji)
+  - name: opiekunowie
+    label: Opiekunowie (imię i nazwisko jak w spisie pracowników, bez tytułów)
+    type: object
+    list: true
+    fields:
+    - name: imie_nazwisko
+      label: Imię i nazwisko
+      type: string
+    - name: rola
+      label: Rola (opcjonalnie)
+      type: string
+  - name: wygaszana
+    label: Wygaszana
+    type: boolean
+  - name: body
+    label: O specjalności
+    type: rich-text
+    options:
+      format: markdown
+  - name: dla_kogo
+    label: Dla kogo (Markdown)
+    type: text
+  - name: dlaczego
+    label: Co wyróżnia specjalność (kafelki)
+    type: object
+    list: true
+    fields:
+    - name: tytul
+      label: Tytuł
+      type: string
+    - name: opis
+      label: Opis
+      type: text
+    - name: ikona
+      label: Ikona
+      type: select
+      options:
+        values:
+        - flaga
+        - czapka
+        - ludzie
+        - zewnetrzny
+        - kalendarz
+        - tablica
+        - zegar
+        - plik
+    - name: tytul_en
+      label: 'EN: tytuł'
+      type: string
+    - name: opis_en
+      label: 'EN: opis'
+      type: text
+  - name: etapy
+    label: Jak przebiega specjalność (oś semestrów)
+    type: object
+    list: true
+    fields:
+    - name: kiedy
+      label: Kiedy (np. Semestr 5)
+      type: string
+    - name: tytul
+      label: Tytuł
+      type: string
+    - name: opis
+      label: Opis
+      type: text
+    - name: kiedy_en
+      label: 'EN: kiedy'
+      type: string
+    - name: tytul_en
+      label: 'EN: tytuł'
+      type: string
+    - name: opis_en
+      label: 'EN: opis'
+      type: text
+  - name: seminaria
+    label: Seminaria związane ze specjalnością
+    type: select
+    options:
+      values:
+      - name: analiza-harmoniczna
+        label: Analiza harmoniczna i rozwinięcia ortogonalne
+      - name: dydaktyka
+        label: Seminarium Pracowni Dydaktyki i Popularyzacji Matematyki
+      - name: dyskretna-analiza-harmoniczna
+        label: Dyskretna analiza harmoniczna i niekomutatywna probabilistyka
+      - name: geometria
+        label: Geometria
+      - name: prawdopodobienstwo
+        label: Teoria prawdopodobieństwa i modelowanie stochastyczne
+      - name: rownania-rozniczkowe
+        label: Równania różniczkowe
+      - name: statystyka
+        label: Statystyka
+      - name: teoria-modeli
+        label: Teoria modeli
+      - name: topologia
+        label: Topologia
+      multiple: true
+    description: (lista z innego repozytorium — nowa pozycja wymaga dopisania w konfiguracji)
+  - name: przedmioty
+    label: Czego się uczysz (grupy przedmiotów)
+    type: object
+    list: true
+    fields:
+    - name: grupa
+      label: Grupa (np. Przedmioty obowiązkowe specjalności)
+      type: string
+    - name: lista
+      label: Przedmioty
+      type: object
+      list: true
+      fields:
+      - name: nazwa
+        label: Nazwa przedmiotu
+        type: string
+      - name: opis
+        label: Krótki opis (opcjonalnie)
+        type: string
+      - name: nazwa_en
+        label: 'EN: nazwa'
+        type: string
+      - name: opis_en
+        label: 'EN: krótki opis'
+        type: string
+    - name: grupa_en
+      label: 'EN: grupa'
+      type: string
+  - name: umiejetnosci
+    label: Co będziesz umieć
+    type: string
+    list: true
+  - name: kariera
+    label: Po studiach (Markdown)
+    type: text
+  - name: tematy_prac
+    label: Przykładowe tematy prac
+    type: object
+    list: true
+    fields:
+    - name: tytul
+      label: Temat
+      type: string
+    - name: opis
+      label: Dopisek (np. rok, poziom)
+      type: string
+  - name: dokumenty
+    label: Dokumenty
+    type: object
+    list: true
+    fields:
+    - name: nazwa
+      label: Nazwa
+      type: string
+    - name: wgraj
+      label: Wgraj plik (PDF, DOCX…)
+      type: file
+      options:
+        path: public/pliki/studia
+    - name: plik
+      label: …albo link (np. do BIP) — gdy nie wgrywasz pliku
+      type: string
+    - name: opis
+      label: Krótki opis
+      type: string
+    - name: nazwa_en
+      label: 'EN: nazwa'
+      type: string
+    - name: opis_en
+      label: 'EN: krótki opis'
+      type: string
+  - name: linki
+    label: Przyciski z linkami (np. koło naukowe)
+    type: object
+    list: true
+    fields:
+    - name: etykieta
+      label: Etykieta
+      type: string
+    - name: adres
+      label: Adres
+      type: string
+    - name: etykieta_en
+      label: 'EN: etykieta'
+      type: string
+  - name: faq
+    label: Pytania i odpowiedzi
+    type: object
+    list: true
+    fields:
+    - name: pytanie
+      label: Pytanie
+      type: string
+    - name: odpowiedz
+      label: Odpowiedź (Markdown)
+      type: text
+    - name: pytanie_en
+      label: 'EN: pytanie'
+      type: string
+    - name: odpowiedz_en
+      label: 'EN: odpowiedź'
+      type: text
+  - name: do_uzupelnienia
+    label: Do uzupełnienia (notatki dla redakcji, niewidoczne)
+    type: string
+    list: true
+  - name: zrodla
+    label: Źródła treści (notatki, niewidoczne)
+    type: string
+    list: true
+  - name: nazwa_en
+    label: 'EN: nazwa'
+    type: string
+  - name: poziom_en
+    label: 'EN: poziom'
+    type: string
+  - name: opis_en
+    label: 'EN: zdanie pod nazwą'
+    type: text
+  - name: dla_kogo_en
+    label: 'EN: dla kogo'
+    type: text
+  - name: umiejetnosci_en
+    label: 'EN: co będziesz umieć'
+    type: string
+    list: true
+  - name: kariera_en
+    label: 'EN: po studiach'
+    type: text
+  - name: tresc_en
+    label: 'EN: o specjalności (Markdown)'
+    type: text
+  - name: kafelek_dla_kogo_en
+    label: 'EN: kafelek — dla kogo'
+    type: text
+  - name: kafelek_kariera_en
+    label: 'EN: kafelek — po studiach'
+    type: text
