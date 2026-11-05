@@ -228,6 +228,9 @@ content:
     - name: opis
       label: Dopisek (np. rok, poziom)
       type: string
+    - name: opis_en
+      label: 'EN: dopisek (puste = wersja angielska pokaże dopisek po polsku; temat zostaje w oryginale)'
+      type: string
   - name: dokumenty
     label: Dokumenty
     type: object
