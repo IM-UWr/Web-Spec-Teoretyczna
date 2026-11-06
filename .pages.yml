@@ -58,6 +58,9 @@ content:
   - name: opis
     label: Jedno zdanie pod nazwą
     type: text
+  - name: haslo
+    label: Hasło na banerze (jedna linia; liczby w banerze pokażą się tylko razem z hasłem)
+    type: string
   - name: zaklad
     label: Zakład
     type: select
@@ -92,6 +95,9 @@ content:
       type: string
     - name: rola
       label: Rola (opcjonalnie)
+      type: string
+    - name: rola_en
+      label: 'EN: rola'
       type: string
   - name: wygaszana
     label: Wygaszana
@@ -304,6 +310,9 @@ content:
   - name: opis_en
     label: 'EN: zdanie pod nazwą'
     type: text
+  - name: haslo_en
+    label: 'EN: hasło na banerze'
+    type: string
   - name: dla_kogo_en
     label: 'EN: dla kogo'
     type: text
