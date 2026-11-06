@@ -12,6 +12,8 @@ poziom: studia I i II stopnia
 poziom_en: Bachelor's and master's level
 opis: "Uporządkowana i pogłębiona wiedza z kluczowych teorii matematycznych — od algebry i analizy, przez topologię i logikę, po rachunek prawdopodobieństwa — oraz biegłość w rygorystycznym dowodzeniu twierdzeń."
 opis_en: "Organised, in-depth knowledge of key mathematical theories — from algebra and analysis, through topology and logic, to probability — and fluency in rigorous proofs."
+haslo: "Matematyka od strony dowodu"
+haslo_en: "Mathematics through proof"
 opiekunowie:
 - imie_nazwisko: Jan Dymara
 wygaszana: false
