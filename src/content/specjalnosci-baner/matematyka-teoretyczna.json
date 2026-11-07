@@ -1,0 +1,51 @@
+{
+  "kierunek": "matematyka",
+  "poziom": "studia I i II stopnia",
+  "poziom_en": "Bachelor's and master's level",
+  "opis": "Uporządkowana i pogłębiona wiedza z kluczowych teorii matematycznych — od algebry i analizy, przez topologię i logikę, po rachunek prawdopodobieństwa — oraz biegłość w rygorystycznym dowodzeniu twierdzeń.",
+  "opis_en": "Organised, in-depth knowledge of key mathematical theories — from algebra and analysis, through topology and logic, to probability — and fluency in rigorous proofs.",
+  "haslo": "Matematyka od strony dowodu",
+  "haslo_en": "Mathematics through proof",
+  "skrot": "TEOR",
+  "opiekunowie": [
+    {
+      "imie_nazwisko": "Jan Dymara"
+    }
+  ],
+  "seminaria": [
+    "analiza-harmoniczna",
+    "dyskretna-analiza-harmoniczna",
+    "rownania-rozniczkowe",
+    "prawdopodobienstwo"
+  ],
+  "wygaszana": false,
+  "kolejnosc": 4,
+  "kafelek_dla_kogo": "Dla osób, które chcą poznać matematykę od strony teorii i dowodów oraz myślą o zaawansowanych studiach i pracy badawczej.",
+  "kafelek_dla_kogo_en": "For those who want to learn mathematics through theory and proofs and are thinking about advanced study and research.",
+  "kafelek_kariera": "Przygotowanie do zaawansowanych studiów magisterskich i pracy badawczej; naturalne zaplecze kadr naukowych i dydaktycznych uczelni.",
+  "kafelek_kariera_en": "Preparation for advanced master's studies and research; a natural talent pool for university teaching and research staff.",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/matematyka",
+    "/pliki/studia/spec-matematyka-teoretyczna.pdf",
+    "/pliki/studia/przewodnik-mt-lic.pdf (wersja z 25.09.2026)",
+    "/pliki/studia/przewodnik-mt-mgr.pdf",
+    "/pliki/studia/zmiany2026.pdf",
+    "/pliki/studia/stary-program-mt-lic.pdf",
+    "/pliki/studia/mgr21-te-zakres.pdf",
+    "/pliki/studia/tem7.pdf (lista oferowanych tematów prac dyplomowych, 2024)",
+    "Strona „Egzamin magisterski” (stara strona IM, kopia w strony.json)",
+    "Strona „Sprawy studenckie” (stara strona IM) — koła naukowe; aktualność „Szkoła dla studentów Baby Steps Beyond the Horizon” (2026)",
+    "Uchwała Senatu UWr nr 48/2026 (pełny tekst, plik ze starej strony: uchwala_nr_48_2026_senatu_uwr_z_2026-05-27_w_sprawie_programu_studiow_dla_kierunku_matematyka_stacjonarne_i_i_ii_stopnia.pdf) — sylwetka absolwenta I i II stopnia, potrzeby społeczno-gospodarcze, efekty uczenia się, treści programowe",
+    "Katalog przedmiotów USOSweb (kody 28-MT-…) — opisy przedmiotów (stan z 24.10.2026)",
+    "Nowa strona — zakłady (src/content/zaklady), granty (src/content/granty), seminaria (src/content/seminaria)"
+  ],
+  "do_uzupelnienia": [
+    "Zasady części pisemnej egzaminu magisterskiego w nowym programie — potwierdzić, czy nadal 2 zadania z wybranych przedmiotów grupy A (zasada pochodzi z dokumentu dołączonego do starego programu; przewodnik II stopnia mówi tylko, że część pisemna obejmuje obowiązkowe przedmioty specjalności)",
+    "Liczba zakresów do wyboru na egzaminie magisterskim — strona egzaminu podaje „2 z 6”, a zakres z 2021 r. i grupa A obejmują 7 pozycji",
+    "Seminaria przeglądowe (II stopień) — lista seminariów oferowanych w danym roku",
+    "Przykładowe tematy prac wybrano według dziedzin kategorii T z ogólnej listy tematów (tem7.pdf, 2024), która nie przypisuje tematów do specjalności — potwierdzić aktualność i ewentualnie dodać tematy projektów indywidualnych i obronionych prac magisterskich tej specjalności",
+    "Lista seminariów na stronie (analiza harmoniczna, dyskretna analiza harmoniczna, równania różniczkowe, prawdopodobieństwo) dobrana według dziedzin kategorii T — potwierdzić, czy specjalność chce wskazywać inne seminaria (np. z algebry, logiki, topologii i geometrii, których nie ma jeszcze w spisie seminariów)",
+    "Ścieżki zawodowe poza karierą akademicką, liczba studentów i wielkość grup — źródła ich nie podają",
+    "Opisy przedmiotów Teoria grafów i Języki formalne i złożoność obliczeniowa pochodzą z treści programowych uchwały 48/2026 (brak stron tych przedmiotów w katalogu USOS z kodem 28-MT)"
+  ]
+}
