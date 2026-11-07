@@ -132,7 +132,10 @@ content:
     - name: opiekunowie
       label: Opiekunowie (imię i nazwisko jak w spisie pracowników, bez tytułów)
       type: object
-      list: true
+      list:
+        collapsible:
+          collapsed: true
+          summary: "{imie_nazwisko}"
       fields:
       - name: imie_nazwisko
         label: Imię i nazwisko
